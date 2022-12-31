@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(185, 41%, 84%);
+  font-family: "Space Mono", monospace;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
+}
+.container {
+  width: 50%;
+  margin: 0 auto;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 20px;
+  padding-top: 2rem;
+  /* min-width: 550px; */
+}
+
+.bill {
+  text-align: right;
+  background-image: url(images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 0.5rem;
+}
+.num {
+  text-align: right;
+  background-image: url(images/icon-person.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 0.5rem;
+}
+input {
+  display: block;
+  padding: 0.5rem;
+  border: none;
+  width: 95%;
+  background-color: hsla(185, 41%, 84%, 15%);
+  border-radius: 10px;
+  color: hsl(183, 100%, 15%);
+  font-size: 24px;
+  cursor: pointer;
+}
+.tippercentage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.zero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.one {
+  width: 47%;
+}
+button {
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  cursor: pointer;
+}
+button:focus {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+button:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+.custom {
+  background-color: hsla(185, 41%, 84%, 15%);
+  color: hsl(183, 100%, 15%);
+}
+.two {
+  background-color: hsl(183, 100%, 15%);
+  width: 45%;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.tamount,
+.ttotal {
+  display: flex;
+  justify-content: space-between;
+}
+.reset {
+  margin-top: 4rem;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 5px;
+  padding: 0.8rem 0;
+  border: none;
+  background-color: hsla(172, 67%, 45%, 50%);
+  color: hsl(183, 100%, 15%);
+}
+.reset:focus {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+.amount,
+.Total {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+  color: hsl(172, 67%, 45%);
+}
+.ttotal {
+  margin-top: -1rem;
+}
+.tip {
+  color: white;
+}
+.error {
+  color: red;
+  display: none;
+}
+@media (max-width:900px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+    min-width: none;
+  }
+  .two {
+    width: 85%;
+margin-top: 2rem;
+  }
+  .one{
+    width: 85%;
+  }
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
